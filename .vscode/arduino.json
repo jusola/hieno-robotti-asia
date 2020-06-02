@@ -1,6 +1,7 @@
 {
     "board": "arduino:avr:mega",
     "configuration": "cpu=atmega2560",
-    "sketch": "test.ino",
-    "port": "COM7"
+    "sketch": "robotti.ino",
+    "port": "COM8",
+    "programmer": "AVRISP mkII"
 }
