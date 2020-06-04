@@ -1,0 +1,8 @@
+{
+    "C_Cpp.intelliSenseEngineFallback": "Disabled",
+    "C_Cpp.intelliSenseEngine": "Tag Parser",
+    "files.associations": {
+        "type_traits": "cpp",
+        "xtr1common": "cpp"
+    }
+}
