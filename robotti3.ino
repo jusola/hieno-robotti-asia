@@ -13,7 +13,7 @@ MeLineFollower lineFinder(PORT_9);
 MeLightSensor lightsensor_12(12);
 MeRGBLed led( 0, 12 );
 
-const float speedMultiplier = 1.7;
+const float speedMultiplier = 1.8;
 
 const int actionCooldown = 0;
 
@@ -246,9 +246,6 @@ void followLine(int percentage, float endTime){
 */
 
 void track1(){
-
-  
-  
   // follow line 1st
   followLine(30, 0.20);
 
@@ -259,7 +256,7 @@ void track1(){
   followLine(30, 0);
 
   // bump
-  moveFwd(0.3, 60);
+  moveFwd(0.3, 50);
 
   // follow line after bump
   followLine(40,0.1); // bit more power to get through
@@ -303,16 +300,16 @@ void track1(){
 
 
   // follow ramp
-  followLine(40, 0.2); // a bit more power to get through bump at ramp start
+  followLine(40, 0); // a bit more power to get through bump at ramp start
 
   // turn after ramp
   turn(90);
-
+  
   // followline to bump
-  followLine(30,0.3);
+  followLine(30,0);
 
   // bump
-  moveFwd(0.25, 60);
+  moveFwd(0.25, 50);
 
   // afterbump
   followLine(40, 0.1);
@@ -320,7 +317,7 @@ void track1(){
   // turn to end
   turn(90);
   // followline to end
-  followLine(30,0.5);
+  followLine(30,0);
 }
 
 /*
