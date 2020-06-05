@@ -13,7 +13,7 @@ MeLineFollower lineFinder(PORT_9);
 MeLightSensor lightsensor_12(12);
 MeRGBLed led( 0, 12 );
 
-const float speedMultiplier = 1.8;
+const float speedMultiplier = 1.8; // 1.3 menee, 1.8 välillä
 
 const int actionCooldown = 0;
 
